@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WOW Currency Converter</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/3144/3144456.png" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="toggle-theme">
+    <button onclick="toggleTheme()">🌙 Toggle Theme</button>
+  </div>
+
+  <div class="container">
+    <h2>💱 Currency Converter</h2>
+
+    <input type="number" id="amount" placeholder="Enter amount" />
+
+    <div class="dropdowns">
+      <div class="select-group">
+        <img id="from-flag" src="" alt="From Flag">
+        <select id="from-currency"></select>
+      </div>
+
+      <button id="swap-btn" onclick="switchCurrencies()">⇄</button>
+
+      <div class="select-group">
+        <img id="to-flag" src="" alt="To Flag">
+        <select id="to-currency"></select>
+      </div>
+    </div>
+
+    <button onclick="convertCurrency()">Convert</button>
+
+    <p id="result"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
